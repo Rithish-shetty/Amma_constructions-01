@@ -28,10 +28,13 @@ export default function page() {
   ];
 
   const projects = [
-    { name: "Luxury Villa Construction", location: "Beverly Hills", year: "2024" },
-    { name: "Downtown Office Complex", location: "Manhattan", year: "2023" },
-    { name: "Residential Renovation", location: "Brooklyn", year: "2024" }
+    { name: "name1", location: "location1", year: "year" },
+    { name: "name2", location: "location2", year: "year" },
+    { name: "name3", location: "locatio3", year: "year" }
   ];
+
+  const bname = english ? 'english' : 'kannada';
+  // {language === 'english' ? 'Amma Construction' : 'ಅಮ್ಮ ಕನ್ಸ್ಟ್ರಕ್ಷನ್'}
 
   return (
     <div className="min-h-screen bg-white">
@@ -41,7 +44,7 @@ export default function page() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Hammer className="h-8 w-8 text-orange-500" />
-              <span className="ml-2 text-xl font-bold">Amma Construction</span>
+              <span className="ml-2 text-xl font-bold">{bname}</span>
             </div>
             
             <div className="hidden md:flex space-x-8 items-center">
@@ -91,7 +94,7 @@ export default function page() {
       <section id="home" className="relative bg-linear-to-r from-gray-900 to-gray-700 text-white py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">{language === 'english' ? 'Amma Construction' : 'ಅಮ್ಮ ಕನ್ಸ್ಟ್ರಕ್ಷನ್'}</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">{bname}</h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">Building Dreams into Reality Since 1995</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="#contact" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
@@ -113,10 +116,10 @@ export default function page() {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Meet Your Contractor</h2>
               <h3 className="text-2xl font-semibold text-orange-500 mb-4">{language === 'english' ? 'Ramesh S M' : 'ರಾಮೇಶ್ ಎಸ್ ಎಂ'}</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                {language === 'english' ? 'Licensed General Contractor with over 28 years of experience in Building construction.As the founder and lead contractor of Amma Construction, Ive dedicated my career to delivering exceptional craftsmanship and unmatched customer service.' : '28 ವರ್ಷಗಳ ಅನುಭವ ಹೊಂದಿರುವ ಲೈಸೆನ್ಸ್ಡ್ ಸಾಮಾನ್ಯ ಕಾನ್ಟ್ರಾಕ್ಟರ್. ಅಮ್ಮ ಕಾನ್ಸ್ಟ್ರಕ್ಷನ್‌ನ ಸ್ಥಾಪಕ ಮತ್ತು ಪ್ರಮುಖ ಕಾನ್ಟ್ರಾಕ್ಟರ್ ಆಗಿ, ನಾನು ನನ್ನ ವೃತ್ತಿಜೀವನವನ್ನು ಅತ್ಯುತ್ತಮ ಶಿಲ್ಪಕಲೆಯನ್ನು ಮತ್ತು ಅಸಾಧಾರಣ ಗ್ರಾಹಕ ಸೇವೆಯನ್ನು ನೀಡುವುದಕ್ಕೆ ಹರಸಿಹ been್ಟಿರುವೆನು.'}
+                {language === 'english' ? 'Contractor with over 18 years of experience in Building construction.As the founder and lead contractor of Amma Construction, Ive dedicated my career to delivering exceptional craftsmanship and unmatched customer service.' : '18 ವರ್ಷಗಳ ಅನುಭವ ಹೊಂದಿರುವ ಕಾನ್ಟ್ರಾಕ್ಟರ್. ಅಮ್ಮ ಕಾನ್ಸ್ಟ್ರಕ್ಷನ್‌ನ ಸ್ಥಾಪಕ ಮತ್ತು ಪ್ರಮುಖ ಕಾನ್ಟ್ರಾಕ್ಟರ್ ಆಗಿ, ನಾನು ನನ್ನ ವೃತ್ತಿಜೀವನವನ್ನು ಅತ್ಯುತ್ತಮ ಶಿಲ್ಪಕಲೆಯನ್ನು ಮತ್ತು ಅಸಾಧಾರಣ ಗ್ರಾಹಕ ಸೇವೆಯನ್ನು ನೀಡುವುದಕ್ಕೆ ಹರಸಿಹ been್ಟಿರುವೆನು.'}
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                {language === 'english' ? 'My team and I are committed to turning your construction visions into reality, ensuring every project is completed on time and within budget. We pride ourselves on our attention to detail, quality workmanship, and transparent communication throughout the entire process.' : 'ನನ್ನ ತಂಡ ಮತ್ತು ನಾನು ನಿಮ್ಮ ನಿರ್ಮಾಣ ದೃಷ್ಟಿಗಳನ್ನು ವಾಸ್ತವವಾಗಿ ಪರಿವರ್ತಿಸುವುದಕ್ಕೆ ಬದ್ಧರಾಗಿದ್ದೇವೆ, ಪ್ರತಿ ಯೋಜನೆಯೂ ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ಮತ್ತು ಬಜೆಟ್ ಒಳಗೆ ಪೂರ್ಣಗೊಳ್ಳುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸುತ್ತೇವೆ. ಸಂಪೂರ್ಣ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿಯೂ ನಮ್ಮ ವಿವರಗಳಿಗೆ ಗಮನ, ಗುಣಮಟ್ಟದ ಕಾರ್ಮಿಕ ಮತ್ತು ಪಾರದರ್ಶಕ ಸಂವಹನದ ಮೇಲೆ ನಾವು ಹೆಮ್ಮೆಪಡುತ್ತೇವೆ.'}
+                {language === 'english' ? 'My team and I are committed to turning your construction visions into reality, ensuring every project is completed on time. We pride ourselves on our attention to detail, quality workmanship, and transparent communication throughout the entire process.' : 'ನನ್ನ ತಂಡ ಮತ್ತು ನಾನು ನಿಮ್ಮ ನಿರ್ಮಾಣ ದೃಷ್ಟಿಗಳನ್ನು ವಾಸ್ತವವಾಗಿ ಪರಿವರ್ತಿಸುವುದಕ್ಕೆ ಬದ್ಧರಾಗಿದ್ದೇವೆ, ಪ್ರತಿ ಯೋಜನೆಯೂ ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ಪೂರ್ಣಗೊಳ್ಳುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸುತ್ತೇವೆ. ಸಂಪೂರ್ಣ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿಯೂ ನಮ್ಮ ವಿವರಗಳಿಗೆ ಗಮನ, ಗುಣಮಟ್ಟದ ಕಾರ್ಮಿಕ ಮತ್ತು ಪಾರದರ್ಶಕ ಸಂವಹನದ ಮೇಲೆ ನಾವು ಹೆಮ್ಮೆಪಡುತ್ತೇವೆ.'}
               </p>
               
               <div className="space-y-3">
@@ -275,7 +278,7 @@ export default function page() {
               <span className="ml-2 text-xl font-bold">Amma Construction</span>
             </div>
             <p className="text-gray-400 mb-4">Building excellence, one project at a time</p>
-            <p className="text-sm text-gray-500">&copy; 2024 Amma Construction. All rights reserved.</p>
+            <p className="text-sm text-gray-500">&copy; 2024 {bname}. All rights reserved.</p>
           </div>
         </div>
       </footer>

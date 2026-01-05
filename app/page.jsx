@@ -133,7 +133,7 @@ export default function page() {
                 </div>
                 <div className="flex items-center text-gray-700">
                   <Users className="h-5 w-5 text-orange-500 mr-3" />
-                  <span>50+ Satisfied Clients</span>
+                  <span>100+ Satisfied Clients</span>
                 </div>
               </div>
             </div>

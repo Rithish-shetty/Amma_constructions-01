@@ -33,8 +33,8 @@ export default function page() {
     { name: "name3", location: "locatio3", year: "year" }
   ];
 
-  const bname = english ? 'english' : 'kannada';
-  // {language === 'english' ? 'Amma Construction' : 'ಅಮ್ಮ ಕನ್ಸ್ಟ್ರಕ್ಷನ್'}
+  const bname =  language === 'english' ? 'inEnglish' : 'inKannada'
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -98,7 +98,7 @@ export default function page() {
             <p className="text-xl md:text-2xl mb-8 text-gray-300">Building Dreams into Reality Since 1995</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="#contact" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
-                Get a Quote
+                Get in Touch
               </a>
               <a href="#projects" className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition">
                 {language === 'english' ? 'View Projects' : 'ಪ್ರಾಜೆಕ್ಟ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ'}
@@ -275,10 +275,10 @@ export default function page() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
               <Hammer className="h-8 w-8 text-orange-500" />
-              <span className="ml-2 text-xl font-bold">Amma Construction</span>
+              <span className="ml-2 text-xl font-bold">{bname}</span>
             </div>
-            <p className="text-gray-400 mb-4">Building excellence, one project at a time</p>
-            <p className="text-sm text-gray-500">&copy; 2024 {bname}. All rights reserved.</p>
+            <p className="text-gray-400 mb-4">Building excellence</p>
+            <p className="text-sm text-gray-500">&copy; 2026 {bname}. All rights reserved.</p>
           </div>
         </div>
       </footer>
